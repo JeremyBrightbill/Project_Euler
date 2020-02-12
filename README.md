@@ -1,2 +1,2 @@
-# Project_Euler
+# Project Euler
 Exercises from projecteuler.net
