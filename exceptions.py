@@ -1,0 +1,2 @@
+class EulerException(Exception): 
+    pass
