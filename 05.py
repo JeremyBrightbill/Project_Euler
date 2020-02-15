@@ -10,15 +10,15 @@ from utilities import find_primes, highest_power
 
 N: int = 20
 
-# First find all primes smaller than N
-
-primes = find_primes(N)
-
-# Then find the highest powers of those primes that are smaller than N
-
-powers_of_primes = [highest_power(prime, N) for prime in primes]
-
 if __name__ == "__main__":
     
+    # First find all primes smaller than N
+    primes = find_primes(N)
+
+    # Then find the highest powers of those primes that are smaller than N
+    powers_of_primes = [highest_power(prime, N) for prime in primes]
+
+    # The product of those numbers will be the smallest number evenly 
+    # divisible by all
     solution = prod(powers_of_primes)
     print(solution)
