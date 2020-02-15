@@ -14,7 +14,7 @@ N: int = 20
 
 primes = find_primes(N)
 
-# Then find all powers of those primes that are smaller than N
+# Then find the highest powers of those primes that are smaller than N
 
 powers_of_primes = [highest_power(prime, N) for prime in primes]
 
