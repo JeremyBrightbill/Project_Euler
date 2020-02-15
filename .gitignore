@@ -1,2 +1,4 @@
 .vscode/settings.json
-__pycache__/exceptions.cpython-38.pyc
+__pycache__/
+env/
+.pytest_cache/
