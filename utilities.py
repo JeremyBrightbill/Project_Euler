@@ -52,7 +52,7 @@ def highest_power(n: int, limit: int) -> int:
     return output
 
 
-# For Exercise 7
+# For Exercise 7 - IN PROGRESS
 
 def is_prime(n: int) -> bool: 
     """Algorithm from Java at
