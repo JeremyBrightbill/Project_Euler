@@ -52,7 +52,7 @@ def highest_power(n: int, limit: int) -> int:
     return output
 
 
-# For Exercise 7 - IN PROGRESS
+# For Exercise 7
 
 def is_prime(n: int) -> bool: 
     """Determine if a given number is prime"""
@@ -78,3 +78,15 @@ def find_n_primes(n: int) -> List:
         number += 1
 
     return primes[-1]
+
+# For Exercise 9
+
+def pythagorean(n: int) -> float:
+
+    for a in range(n + 1): 
+        for b in range(n + 1): 
+            c_squared: int = a**2 + b**2
+            c: float = c_squared**0.5
+            if a < b and b < c and a + b + c == n: 
+                return a * b * c
+    return 0

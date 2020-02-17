@@ -1,4 +1,5 @@
-from utilities import find_prime_factors, find_primes, highest_power, is_prime, find_n_primes
+from utilities import find_prime_factors, find_primes, highest_power, is_prime, \
+    find_n_primes, pythagorean
 
 def test_find_prime_factors(): 
     assert find_prime_factors(100) == [2, 2, 5, 5]
@@ -26,3 +27,6 @@ def test_is_prime():
 def test_find_n_primes(): 
     assert find_n_primes(5) == 11
     assert find_n_primes(6) == 13
+
+def test_pythagorean(): 
+    assert pythagorean(12) == 60
