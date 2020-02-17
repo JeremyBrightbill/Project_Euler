@@ -24,4 +24,5 @@ def test_is_prime():
     assert is_prime(6) == False
 
 def test_find_n_primes(): 
-    assert find_n_primes(5) == [2, 3, 5, 7, 11]
+    assert find_n_primes(5) == 11
+    assert find_n_primes(6) == 13

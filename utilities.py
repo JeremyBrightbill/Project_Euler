@@ -55,15 +55,20 @@ def highest_power(n: int, limit: int) -> int:
 # For Exercise 7 - IN PROGRESS
 
 def is_prime(n: int) -> bool: 
-    """Algorithm from Java at
-https://algorithms.tutorialhorizon.com/print-first-n-prime-numbers-java-code/"""
-    for i in range(2, floor(sqrt(n))):
-        if n % i == 0: 
+    """Determine if a given number is prime"""
+    root = n**0.5
+    factor: int = 2
+    if n < 2: 
+        return False
+    while factor <= root: 
+        if n % factor == 0: 
             return False
+        else:
+            factor += 1
     return True
 
 def find_n_primes(n: int) -> List:
-    """Find the first n prime numbers"""
+    """Find the nth prime number"""
     number: int = 2
     primes: List[int] = []
 
@@ -72,4 +77,4 @@ def find_n_primes(n: int) -> List:
             primes.append(number)
         number += 1
 
-    return primes
+    return primes[-1]
