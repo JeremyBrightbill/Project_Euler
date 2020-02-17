@@ -1,7 +1,6 @@
 """Utility functions for use in multiple programs"""
 
 from typing import List
-from math import sqrt, floor
 
 
 # For Exercise 3
